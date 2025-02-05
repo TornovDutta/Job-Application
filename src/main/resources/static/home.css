@@ -1,0 +1,163 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f7fc;
+    color: #333;
+    margin: 0;
+    padding: 0;
+
+}
+
+/* Navbar Styling */
+.navbar {
+    display:flex;
+    width: 100%;
+    background-color: #343a40; /* Darker professional shade */
+    padding: 15px 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-size: 1.9rem;
+    font-weight: bold;
+    color: #ffffff !important;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+.navbar-brand:hover {
+    color: #f8f9fa !important;
+}
+
+.navbar-nav {
+    margin-left: auto;
+}
+
+.navbar-nav .nav-link {
+    color: #f8f9fa !important;
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 12px 20px;
+    border-radius: 4px;
+    margin: 0 8px;
+    transition: color 0.3s, background 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #343a40 !important;
+    background-color: #f8f9fa;
+}
+
+/* Active Link Styling */
+.navbar-nav .nav-link.active {
+    background-color: #007bff;
+    color: #fff !important;
+}
+
+/* Dropdown Menu */
+.nav-item.dropdown .dropdown-menu {
+    border-radius: 5px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.nav-item.dropdown .dropdown-item {
+    color: #343a40;
+    padding: 10px 20px;
+}
+
+.nav-item.dropdown .dropdown-item:hover {
+    background-color: #f8f9fa;
+    color: #007bff;
+}
+
+/* Button for Login/Signup */
+.navbar .btn {
+    color: #343a40;
+    border: 1px solid #343a40;
+    background-color: transparent;
+    padding: 8px 20px;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.navbar .btn:hover {
+    color: #fff;
+    background-color: #343a40;
+    border-color: #343a40;
+}
+
+/* Container and Card Styling */
+.container {
+    margin-top: 60px;
+    padding: 20px;
+    max-width: 1100px;
+}
+
+/* Card Styling */
+.card {
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+    background: #fff;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card.bg-warning {
+    background: linear-gradient(135deg, #ffb300, #ff9800);
+    color: #fff;
+}
+
+.card-title {
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Buttons */
+.btn-primary {
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    border: none;
+    font-size: 1.1rem;
+    padding: 12px 24px;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+    display: inline-block;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, #0056b3, #003f7f);
+    transform: translateY(-2px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 10px 20px;
+    }
+
+    .navbar-nav {
+        display: block;
+        text-align: center;
+    }
+
+    .navbar-nav .nav-link {
+        padding: 10px 15px;
+    }
+
+    .container {
+        margin-top: 40px;
+        padding: 15px;
+    }
+
+    .btn-primary {
+        padding: 10px 20px;
+    }
+}
